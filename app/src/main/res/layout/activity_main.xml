@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg1"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Email"
+        android:layout_marginTop="200px"
+        android:layout_marginLeft="100px"
+        android:textFontWeight="900"
+        android:textSize="70px"
+        android:id="@+id/email"
+        android:textColor="@color/purple_500"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/email"
+        android:layout_marginLeft="100px"
+        android:textColorHint="@color/purple_200"
+        android:id="@+id/email_edit"
+        android:inputType="textEmailAddress"
+        android:text="abc@gmail.com"
+        android:layout_marginTop="40px"
+        android:backgroundTint="@color/cardview_dark_background"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Password"
+        android:layout_below="@id/email_edit"
+        android:layout_marginTop="200px"
+        android:layout_marginLeft="100px"
+        android:textFontWeight="900"
+        android:textSize="70px"
+        android:id="@+id/pass"
+        android:textColor="@color/purple_500"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pass"
+        android:layout_marginLeft="100px"
+        android:textColorHint="@color/purple_200"
+        android:id="@+id/pass_edit"
+        android:inputType="textPassword"
+        android:layout_marginTop="40px"
+        android:backgroundTint="@color/cardview_dark_background"/>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:id="@+id/login"
+        android:layout_marginTop="1000px"
+        android:layout_marginLeft="100px"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:id="@+id/reg"
+        android:layout_marginTop="1000px"
+        android:layout_marginLeft="100px"/>
+
+</LinearLayout>
+
+
+</RelativeLayout>
